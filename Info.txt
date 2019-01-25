@@ -8,8 +8,13 @@ https://www.flaticon.com/
 Pictures and Content:
 http://poetsofthefall.com/
 
+Other Images:
+Google Images
+
 To try (for Linux):
->Configure apache
->Place this folder (say YourFolder) in /var/www/html/
->Go to your web browser and type in the following in the url:
-localhost/YourFolder/Thunderstone.html
+>Configure angular-cli
+>Run ng serve in terminal (while in the project directory).
+>Navigate to http://localhost:4200/ in your browser
+
+Not included node_modules folder:
+https://stackoverflow.com/questions/18128863/should-node-modules-folder-be-included-in-the-git-repository
