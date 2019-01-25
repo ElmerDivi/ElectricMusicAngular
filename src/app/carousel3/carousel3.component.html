@@ -1,0 +1,49 @@
+
+<app-header1></app-header1>
+
+<!-- https://stackoverflow.com/questions/35163009/angular-2-show-and-hide-an-element -->
+
+<div class="carousel">
+	<div class="cImg">
+		<div *ngIf="imgSel[0]">
+			<img src="assets/Img/promoUltra3.jpg" alt="Carousel Slideshow">
+		</div>
+		<div *ngIf="imgSel[1]">
+			<img src="assets/Img/promoToT2.jpg" alt="Carousel Slideshow">
+		</div>
+		<div *ngIf="imgSel[2]">
+			<img src="assets/Img/promoDaze2.jpg" alt="Carousel Slideshow">
+		</div>
+	</div>
+
+	<div class="cControls">
+		<span (click)="prevClk();cnterSet()">PREV</span>
+		<span (click)="nextClk();cnterSet()">NEXT</span>
+
+		<!-- The one that worked -->
+		<!--
+		<img *ngIf="!imgSel[0]" (click)="ringClk(0);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		<img *ngIf="imgSel[0]" (click)="ringClk(0);cnterSet()" src="assets/Img/circleFill.png" alt="Select Ring Fill">
+		<img *ngIf="!imgSel[1]" (click)="ringClk(1);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		<img *ngIf="imgSel[1]" (click)="ringClk(1);cnterSet()" src="assets/Img/circleFill.png" alt="Select Ring Fill">
+		<img *ngIf="!imgSel[2]" (click)="ringClk(2);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		<img *ngIf="imgSel[2]" (click)="ringClk(2);cnterSet()" src="assets/Img/circleFill.png" alt="Select Ring Fill">
+		-->
+
+		<!-- The cool kid -->
+		<div *ngFor="let i of imgSel5" style="display: inline;">
+			<img *ngIf="!imgSel[i]" (click)="ringClk(i);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+			<img *ngIf="imgSel[i]" (click)="ringClk(i);cnterSet()" src="assets/Img/circleFill.png" alt="Select Ring Fill">
+		</div>
+
+		<!--
+		<img (click)="ringClk(0);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		<img (click)="ringClk(1);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		<img (click)="ringClk(2);cnterSet()" src="assets/Img/circle.png" alt="Select Ring">
+		-->
+	</div>
+</div>
+
+<app-bg-img4></app-bg-img4>
+<app-hocards5></app-hocards5>
+<app-footer2></app-footer2>

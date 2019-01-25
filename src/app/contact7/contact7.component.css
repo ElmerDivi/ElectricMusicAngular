@@ -1,0 +1,127 @@
+
+.contactUs {
+	position: relative;
+	margin-bottom: 4%;
+	/*
+	*/
+}
+
+.formCon {
+	margin-bottom: 5%;
+}
+
+.formCon input, .formCon textarea {
+	padding: 2%;
+	width: 80%;
+}
+
+.formCon textarea {
+	height: 10vw;
+	resize: none;
+}
+
+.formCon input[type=button] {
+	margin-top: 6%;
+	cursor: pointer;
+}
+
+agm-map {
+	height: 30vw;
+}
+
+.formCon input[type=number]::-webkit-inner-spin-button, 
+.formCon input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0; 
+}
+
+#spUs {
+	display: block;
+	font-size: 170%;
+	margin-top: 4%;
+	margin-bottom: 7%;
+}
+
+.contForm {
+	margin-left: 8%;
+	margin-top:5%;
+	width: 50%;
+	/*
+	display: inline-block;
+	border: 0.1vw solid black;
+	text-align: center;
+	*/
+}
+
+.AbtCon {
+	width: 30%;
+	position: absolute;
+	top: 56%;
+	right: 4%;
+	z-index: 5;
+	/*
+	top: 46%;
+	right: 9%;;
+	border: 0.1vw solid black;
+	float: right;
+	display: inline-block;
+	margin-top: 3%;
+	*/
+}
+
+.AbtCon span {
+	display: block;
+	margin-top: 3%;
+	font-size: 130%;
+	font-style: italic;
+}
+
+.AbtCon span:first-child {
+	font-size: 170%;
+	font-style: normal;
+	margin-bottom: 10%;
+}
+
+.successMsg2 {
+	margin-top: 8%;
+	font-style: italic;
+	padding: 1%;
+	font-size: 130%;
+	color: yellowgreen;
+}
+
+@media screen and (max-width: 768px ) {
+
+	.contForm {
+		width: 100%;
+	}
+
+	.AbtCon {
+		position: static;
+		margin-top: 15%;
+		margin-bottom: 10%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 100%;
+		/*
+		border: 0.1vw solid #ccc;
+		background-color: ivory;
+		border: 0.1vw solid #ccc;
+		top: 0;
+		right: 0;
+		padding: 15%;
+		^ Padding distortion ?
+		*/
+	}
+
+	.AbtCon span:first-child {
+		margin-bottom: 7%;
+	}
+
+	agm-map {
+		height: 36vw;
+	}
+}

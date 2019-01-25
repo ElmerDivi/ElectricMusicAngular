@@ -1,0 +1,79 @@
+
+.hocards {
+	padding: 2%;
+	margin: 2% 0;
+	/*
+	border: 0.1vw solid yellowgreen;
+	*/
+}
+
+.card1, .card2, .card3 {
+	width: 28%;
+	float: left;
+	text-align: center;
+	/*
+	border: 0.1vw solid saddlebrown;
+	margin-right: 5%;
+	*/
+}
+
+.imgCard {
+	min-height: 15vw;
+	/*
+	border: 0.1vw solid black;
+	*/
+}
+
+.card1 img, .card2 img, .card3 img {
+	border-radius: 50%;
+	width: 40%;
+	/*
+	border: 0.1vw solid black;
+	*/
+}
+
+.card1, .card2 {
+	margin-right: 6%;
+}
+
+.cardTex {
+	padding: 1%;
+	margin: 3% 0;
+	color: rgba(0,0,0,0.8);
+	font-size: 1.6vw;
+	/*
+	border: 0.1vw solid black;
+	*/
+}
+
+@media screen and (max-width: 768px ) {
+
+	.card1, .card2, .card3 {
+		width: 100%;
+		float: none;
+	}
+
+	.imgCard {
+		/*
+		min-height: 10vw;
+		*/
+	}
+
+	.card1 img, .card2 img, .card3 img {
+		width: 16%;
+	}
+
+	.cardTex {
+		width: 60%;
+		font-size: 2.2vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 425px ) {
+
+	.cardTex {
+		font-size: 3vw;
+	}
+}

@@ -1,0 +1,15 @@
+
+About:
+Practice project to test knowledge of Angular 5
+
+Icons used from:
+https://www.flaticon.com/
+
+Pictures and Content:
+http://poetsofthefall.com/
+
+To try (for Linux):
+>Configure apache
+>Place this folder (say YourFolder) in /var/www/html/
+>Go to your web browser and type in the following in the url:
+localhost/YourFolder/Thunderstone.html

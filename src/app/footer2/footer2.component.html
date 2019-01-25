@@ -1,0 +1,36 @@
+<div class="footer">
+  <div class="ques">
+	<span>Have Questions ? <em>Ask</em></span>
+	<!--
+	<form>
+	  <input type="text" name="Name" placeholder="Name">
+	  <input type="text" name="Email" placeholder="Email">
+	  <input type="text" name="Phone" placeholder="Number">
+	  <input type="button" value="Submit">
+	</form>
+	-->
+
+	<form [formGroup] = "formdata" >
+	  <input type="text" name="Name" placeholder="Name" formControlName="name">
+	  <input type="text" name="Email" placeholder="Email" formControlName="email">
+	  <input type="number" name="Number" placeholder="8xxxxxxxxx" formControlName="number">
+	  <input type="button" [disabled] = "!formdata.valid" (click)="msgDisplay(0)"  value="Submit">
+	</form>
+
+	<div class="successMsg" *ngIf="sMsg[0]" >
+	  Thank you for your time. We'll get back to you shortly.
+	</div>
+
+  </div>
+
+  <div class="subscribe">
+	<form [formGroup] = "formdata2" >
+	  <input type="text" name="Email2" placeholder="Email" formControlName="subscr">
+	  <input type="button" [disabled] = "!formdata2.valid" (click)="msgDisplay(1)"  value="Subscribe">
+	</form>
+
+	<div class="successMsg" *ngIf="sMsg[1]" >
+	  Thank you for subscribing.
+	</div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="tablePane clearfix">
+
+	<div class="tableContainer">
+		<table>
+			<thead>
+				<tr>
+					<th (click)="clickCountTh(0);">Id</th>
+					<th [class.clickTh]="thSelect[1]" (click)="sortBody(0);clickCountTh(1);">Title</th>
+					<th [class.clickTh]="thSelect[2]" (click)="sortBody(1);clickCountTh(2);">Body</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--
+			<tr>
+			<td>Something</td>
+			<td>Something</td>
+			<td>Something</td>
+			<td>
+			<img src="" alt="Edit Button" />
+			<img src="" alt="Delete Button" />
+			</td>
+			</tr>
+				-->
+				<!-- https://stackoverflow.com/questions/40860933/ngif-and-ngfor-on-td-td-element -->
+				<ng-container *ngIf="!testSort">
+					<tr *ngFor="let data of postData2">
+						<td>{{data.id}}</td>
+						<td>{{data.title}}</td>
+						<td>{{data.body}}</td>
+						<!-- <td>Action images<td> -->
+						<!-- <td class=":15%;"> -->
+						<td>
+							<img src="assets/Img/pencil.png" alt="Edit Button" />
+							<img src="assets/Img/cross.png" alt="Delete Button" />
+						</td>
+					</tr>
+				</ng-container>
+
+				<!-- <div *ngIf="sortBody"> -->
+				<ng-container *ngIf="testSort">
+					<tr *ngFor="let index of ordArr">
+						<td>{{postData2[index].id}}</td>
+						<td>{{postData2[index].title}}</td>
+						<td>{{postData2[index].body}}</td>
+						<td>
+							<img src="assets/Img/pencil.png" alt="Edit Button" />
+							<img src="assets/Img/cross.png" alt="Delete Button" />
+						</td>
+					</tr>
+				</ng-container>
+				<!-- </div> -->
+
+			</tbody>
+		</table>
+	</div>
+
+	<!-- <input (click)="TestButton()" type="button" value="TestMe" style="margin-left:5%;margin-top:2%;padding:1%;" /> -->
+
+	<div class="paginationTab">
+		<span [class.selctPage]="some[0] === selectedP" (click)="storeHttpData2(1);setPageFn(some[0]);pageRigid(0)">
+			&lt;&lt;
+		</span>
+		<span (click)="pageBack()">
+			&lt;
+		</span>
+		<span [class.selctPage]="some[2] === selectedP" (click)="storeHttpData2(pageNo);setPageFn(some[2]);pagePrev()">
+			{{pageNo}}
+		</span>
+		<span [class.selctPage]="some[3] === selectedP" (click)="storeHttpData2(pageNo+1);setPageFn(some[3])">
+			{{pageNo + 1}}
+		</span>
+		<span [class.selctPage]="some[4] === selectedP" (click)="storeHttpData2(pageNo+2);setPageFn(some[4])">
+			{{pageNo + 2}}
+		</span>
+		<span [class.selctPage]="some[5] === selectedP" (click)="storeHttpData2(pageNo+3);setPageFn(some[5])">
+			{{pageNo + 3}}
+		</span>
+		<span [class.selctPage]="some[6] === selectedP" (click)="storeHttpData2(pageNo+4);setPageFn(some[6]);pageNext()">
+			{{pageNo + 4}}
+		</span>
+		<span (click)="pageForw()">
+			&gt;
+		</span>
+		<span [class.selctPage]="some[8] === selectedP" (click)="storeHttpData2(20);setPageFn(some[8]);pageRigid(2)">
+			&gt;&gt;
+		</span>
+	</div>
+
+</div>

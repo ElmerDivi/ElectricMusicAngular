@@ -1,0 +1,103 @@
+
+.abtUs {
+	position: relative;
+	width: 100%;
+	min-height: 60.4vw;
+	/*
+	height: 60.4vw;
+	^ Height for JB
+	height: 60.6vw;
+	^ Height for Biz
+	height: auto;
+	height: 300px;
+	*/
+}
+
+.abtUsCont {
+	position: absolute;
+	width: 60%;
+	font-size: 2.5vw;
+	padding: 3%;
+	font-style: italic;
+	z-index: 7;
+	/*
+	border: 0.1vw solid black;
+	float: left;
+	margin: 2% 0;
+	*/
+}
+
+.abtUsCont span {
+	color: yellowgreen;
+}
+
+.div24 {
+	margin-top: 4%;
+}
+
+.div23 {
+	margin-top: 13%;
+}
+
+.abtUsImg {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	/*
+	border: 0.1vw solid black;
+	float: right;
+	margin: 2% 0;
+	width: 60%;
+	*/
+}
+
+.abtUsImg img {
+	width: 100%;
+	opacity: 0.3;
+	transition: opacity 0.5s;
+	/*
+	opacity: 0.2;
+	^ for JB
+	opacity: 0.9;
+	^ for Biz
+	*/
+}
+
+.abtUsImg img:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px ) {
+
+	.abtUs {
+		min-height: 61vw;
+	}
+
+	.abtUsCont {
+		width: 100%;
+	}
+
+	.abtUsImg {
+		width: 100%;
+		text-align: center;
+	}
+
+	.abtUsImg img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 425px ) {
+
+	.abtUs {
+		min-height: 76vw;
+	}
+
+	.abtUsCont {
+		font-size: 3.1vw;
+	}
+
+	.abtUsImg {
+		margin-top: 10%;
+	}
+}

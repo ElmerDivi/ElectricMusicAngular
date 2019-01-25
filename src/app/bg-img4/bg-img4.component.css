@@ -1,0 +1,106 @@
+
+.bgImg {
+	/*
+	border: 0.1vw solid indigo;
+	*/
+	font-size: 3vw;
+	font-style: italic;
+}
+
+.bgDiv {
+	padding: 3%;
+	position: relative;
+	/*
+	border: 0.1vw solid yellowgreen;
+	background-image: url("assets/Img/clearviewBg.png");
+	*/
+}
+
+#div12 {
+	width: 70%;
+	/*
+	border: 0.1vw solid black;
+	*/
+}
+
+#abtButton {
+	display: inline-block;
+	position: absolute;
+	top: 34%;
+	right: 8%;
+	padding: 1% 2%;
+	background-color: #262626;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.5s, color 0.5s;
+	border: 0.1vw solid #262626;
+	/*
+	*/
+}
+
+#abtButton:hover {
+	background-color: white;
+	color: black;
+}
+
+.bgImgDiv {
+	position: relative;
+}
+
+.bgImgDiv img {
+	width: 100%;
+	/*
+	opacity: 0.4;
+	*/
+}
+
+#overImg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	/* ^ To fix over Img */
+	padding: 3%; 
+	/* Should match bgDiv padding */
+	/*
+	text-align: center;
+	background-color: indigo;
+	*/
+}
+
+@media screen and (max-width: 768px ) {
+
+	#overImg {
+		text-align: center;
+	}
+
+	#div12 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#abtButton {
+		display: block;
+		position: relative;
+		top: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 12%;
+	}
+}
+
+@media screen and (max-width: 425px ) {
+
+	.bgImg {
+		font-size: 3.6vw;
+	}
+
+	#abtButton {
+		width: 14%;
+	}
+}

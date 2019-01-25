@@ -1,0 +1,170 @@
+
+.tablePane {
+	background-color: #eeeeef;
+	border: 0.1vw solid #eeeeef;
+	/*
+	Problem w/o border
+	min-height: 50vw;
+	height: 50vw;
+	*/
+}
+
+.tableContainer {
+	padding: 5%;
+	padding-bottom: 0;
+	/*
+	border: 0.1vw solid yellowgreen;
+	*/
+}
+
+.tableContainer table {
+	width: 100%;
+	border-collapse: collapse;
+	min-height: 41vw;
+	/*
+	min-height: 41vw;
+	border: 0.1vw solid yellowgreen;
+	*/
+}
+
+.tableContainer th {
+	font-size: 110%;
+	color: #214591;
+	border-top: 0.1vw solid #ccc;
+	cursor: pointer;
+	transition: background-color 0.7s;
+	/*
+	border-bottom: none;
+	color: #0b1731;
+	^ Bond
+	color: deepskyblue;
+	 */
+}
+
+.tableContainer th:last-child {
+	cursor: auto;
+}
+
+.tableContainer th:hover:not(:last-child) {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.clickTh {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.tableContainer th, td {
+	border-bottom: 0.1vw solid #ccc;
+	padding: 2%;
+	text-align: center;
+	/*
+	background-color: white;
+	*/
+}
+
+.tableContainer td:last-child {
+	width: 15%;
+}
+
+.tableContainer img {
+	width: 18%;
+	margin: 4%;
+	cursor: pointer;
+}
+
+.paginationTab {
+	margin: 5%;
+	text-align: center;
+	width: 40%;
+	float: right;
+	/*
+	text-align: right;
+	width: 40%;
+	float: right;
+	margin-right: auto;
+	margin-left: auto;
+	border: 0.1vw solid indigo;
+	 */
+}
+
+.paginationTab span {
+	border: 0.1vw solid #ccc;
+	padding: 2%;
+	cursor: pointer;
+	background-color: white;
+	display: inline-block;
+	width: 11.11%;
+	/*
+	width: 11.11%;
+	display: inline-block;
+	*/
+}
+
+.paginationTab span:hover:not(.selctPage) {
+	background-color: rgba(0, 0, 0, 0.01);
+	/*
+	color: deepskyblue;
+	color: dodgerblue;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: white;
+	*/
+}
+
+.selctPage {
+	background-color: #a9dcef !important;
+	/*
+	background-color: aquamarine !important;
+	background-color: mistyrose !important;
+	background-color: blanchedalmond !important;
+	color: red;
+	background-color: black;
+	color: #214591;
+	 */
+}
+
+@media screen and (max-width: 768px ) {
+
+	.paginationTab {
+		text-align: center;
+		width: 90%;
+		float: none;
+	}
+
+	.tableContainer img {
+		width: 30%;
+		display: block; 
+		margin-bottom: 30%;
+		/*
+		margin-bottom: 30%;
+		display: block; 
+		 */
+	}
+
+	.tableContainer table {
+		min-height: 98vw;
+		/*
+		min-height: 98vw;
+		min-height: 87vw;
+		*/
+	}
+
+	/*
+	.tableContainer th, td {
+		width: 100%;
+	}
+	*/
+}
+
+@media screen and (max-width: 425px ) {
+
+	.tableContainer img {
+		width: 40%;
+	}
+
+	.tableContainer table {
+		min-height: 249vw;
+		/*
+		min-height: 116vw;
+		*/
+	}
+}

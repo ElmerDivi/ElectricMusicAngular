@@ -1,0 +1,123 @@
+
+.footer {
+	text-align: center;
+	font-size: 1vw;
+	/*
+	border: 0.1vw solid black;
+	margin-left: auto;
+	margin-right: auto;
+	*/
+}
+
+.footer input {
+	display: inline-block;
+	padding: 1% 1%;
+	font-size: 100%;
+	font-style: italic;
+	outline: none;
+	border: 2% solid #ccc;
+}
+
+.footer input[type=text]:focus {
+	border: 2% solid yellow;
+}
+
+.footer input[type="button"] {
+	cursor: pointer;
+}
+
+.ques {
+	padding: 5%;
+	background-color: #3c3c3c;
+	/*
+	border: 0.1vw solid indigo;
+	*/
+}
+
+.ques input {
+	margin-right: 2%;
+}
+
+/*
+https://stackoverflow.com/questions/13107118/how-to-remove-the-arrows-from-inputtype-number-in-opera
+*/
+
+.ques input[type=number]::-webkit-inner-spin-button, 
+.ques input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0; 
+}
+
+.ques span {
+	display: block;
+	color: white;
+	margin-bottom: 3%;
+	font-size: 150%;
+}
+
+.subscribe {
+	padding: 5%;
+	background-color: #262626;
+	/*
+	border: 0.1vw solid yellowgreen;
+	*/
+}
+
+.successMsg {
+	margin-top: 3%;
+	font-style: italic;
+	padding: 1%;
+	font-size: 130%;
+	color: yellowgreen;
+}
+
+@media screen and (max-width: 768px ) {
+    .ques input {
+		display: block;
+		width: 50%;
+		margin-bottom: 3%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.subscribe input[type=text] {
+		width: 35%;
+	}
+
+	.subscribe input[type=button] {
+		width: 15%;
+	}
+
+	.footer {
+		font-size: 1.6vw;
+	}
+
+	.footer input {
+		font-size: 110%;
+	}
+
+	.ques span {
+		margin-bottom: 6%;
+	}
+}
+
+@media screen and (max-width: 425px ) {
+
+	.footer {
+		font-size: 2.3vw;
+	}
+
+    .ques input {
+		width: 80%;
+	}
+
+	.subscribe input[type=text] {
+		width: 60%;
+	}
+
+	.subscribe input[type=button] {
+		width: 20%;
+	}
+}

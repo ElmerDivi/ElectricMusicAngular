@@ -1,0 +1,17 @@
+
+>>
+
+Imported 2 Http Modules in app.module.ts
+
+Added rxjs module
+
+Need to read the HTTP module of 'Heroes'
+
+>>
+
+.slice(A, B);
+The method then selects elements from the start argument, and up to (but not including) the end argument.
+
+>>
+
+

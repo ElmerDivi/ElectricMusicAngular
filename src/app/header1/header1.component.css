@@ -1,0 +1,89 @@
+
+.header {
+	overflow: hidden;
+	background-color: #3c3c3c;
+	font-size: 1.4vw;
+	/*
+	font-size: 120%;
+	position: relative;
+	*/
+}
+
+.header a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 2%;
+	text-decoration: none;
+	transition: background-color 0.5s, color 0.5s;
+	/*
+	position: absolute;
+	height: 100%;
+	z-index: 6;
+	*/
+}
+
+.header a:hover:not(#LogoH) {
+	background-color: rgba(255, 255, 255, 0.95);
+	color: black;
+}
+
+#LogoH {
+	float: left;
+	word-break: break-all;
+	/*
+	width: 11%;
+	padding: 2% 0.5%;
+	border: 0.1vw solid yellow;
+	*/
+}
+
+/*
+#LgTxt::first-letter {
+	font-size: 150%;
+}
+*/
+
+#LgTxt {
+	text-transform: uppercase;
+	/*
+	display: inline-block;
+	*/
+}
+
+#LogoImg {
+	float: left;
+	width: 5.7%;
+	padding: 1%;
+	margin-left: 1%;
+	cursor: pointer;
+	/*
+	width: 7%;
+	display: inline-block;
+	margin-right: 15%;
+	*/
+}
+
+@media screen and ( max-width: 768px ) {
+
+	.header {
+		font-size: 2.2vw;
+	}
+
+	#LogoImg {
+		width: 6.5%;
+	}
+}
+
+@media screen and (max-width: 425px ) {
+
+	.header {
+		font-size: 3vw;
+	}
+
+	#LogoImg {
+		width: 7.3%;
+	}
+
+}
